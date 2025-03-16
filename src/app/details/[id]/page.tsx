@@ -82,9 +82,9 @@ export default function Home() {
                     stockData && (
                       <StockGraph
                         companyName={stockData?.companyName}
-                        stockPrice={(stockData?.stockPrice || 0).toFixed(2)}
-                        priceChange={stockData?.priceChange?.toFixed(2)}
-                        percentChange={stockData?.percentChange?.toFixed(2)}
+                        stockPrice={(stockData?.stockPrice || 0)}
+                        priceChange={stockData?.priceChange}
+                        percentChange={stockData?.percentChange}
                         chartData={stockData?.chartData}
                         hasShuffle={true}
                       />
